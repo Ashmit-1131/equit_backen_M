@@ -5,12 +5,12 @@ const TaskSchema = mongoose.Schema(
 
         name: { type: String, required: true },
         description: { type: String },
-        checklist: [{ type: String }],
-        comments: [{ type: String }],
+        checklist: { type: String },
+        comments: { type: String },
         project: { type: String },
-        assign: [{ type: String }],
-        dueDate: { type: Date },
-        labels: [{ type: String }],
+        assign: { type: String },
+        dueDate: { type: String },
+        labels: { type: String },
         user:{type:String,required:true}
     },
     {
